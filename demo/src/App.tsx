@@ -1,11 +1,8 @@
 import React from "react";
+import Navbar from "./components/navbar";
 
 function App() {
-    return (
-        <div>
-            <h1 className="text-center mt-2">This is the demo!</h1>
-        </div>
-    );
+    return <Navbar />;
 }
 
 export default App;
