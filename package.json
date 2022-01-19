@@ -1,0 +1,24 @@
+{
+  "name": "panel",
+  "version": "0.1.1",
+  "description": "⚙️ Noderrz Control Panel - Open source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noderrz/panel.git"
+  },
+  "keywords": [
+    "panel",
+    "node",
+    "js"
+  ],
+  "author": "Noderrz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noderrz/panel/issues"
+  },
+  "homepage": "https://github.com/noderrz/panel#readme"
+}
