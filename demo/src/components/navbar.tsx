@@ -26,7 +26,7 @@ function Navbar() {
                                 </a>
 
                                 <a href="#" className="nav-btn">
-                                    <i className="fa fa-cog"></i> The Project
+                                    <i className="fa fa-cog"></i> Demo
                                 </a>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ function Navbar() {
                             </a>
 
                             <a href="#" className="nav-btn  ml-2">
-                                <i className="fa fa-cog"></i> The Project
+                                <i className="fa fa-cog"></i> Demo
                             </a>
                         </div>
                     </div>
