@@ -25,7 +25,7 @@ function Navbar() {
                                     <i className="fa fa-users"></i> Our Team
                                 </a>
 
-                                <a href="#" className="nav-btn">
+                                <a href="/auth/login" className="nav-btn">
                                     <i className="fa fa-cog"></i> Demo
                                 </a>
                             </div>
@@ -101,7 +101,7 @@ function Navbar() {
                                 <i className="fa fa-users"></i> Our Team
                             </a>
 
-                            <a href="#" className="nav-btn  ml-2">
+                            <a href="/auth/login" className="nav-btn  ml-2">
                                 <i className="fa fa-cog"></i> Demo
                             </a>
                         </div>
