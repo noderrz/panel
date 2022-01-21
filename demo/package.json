@@ -4,6 +4,7 @@
     "scripts": {
         "dev": "vite --port=5000",
         "build": "tsc && vite build",
+        "build:react": "react-scripts build",
         "preview": "vite preview",
         "setup": "npx tailwindcss init -p",
         "deploy": "npx netlify-cli deploy --prod"
@@ -15,6 +16,7 @@
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^6.2.1",
+        "react-scripts": "^5.0.0",
         "tailwindcss": "^3.0.15"
     },
     "devDependencies": {
