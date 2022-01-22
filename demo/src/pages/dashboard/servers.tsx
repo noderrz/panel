@@ -3,48 +3,60 @@ import React from "react";
 const servers = [
     {
         id: 1,
-        name: "Server 1",
+        name: "My Server",
         description: "This is server 1",
         status: "online",
     },
 
     {
         id: 2,
-        name: "Server 2",
-        description: "This is server 2",
+        name: "My Server 2",
+        description: "This is the description for your server",
         status: "offline",
     },
 ];
 
 function Servers() {
     return (
-        <div>
-            <h1>Servers</h1>
-            <ul className="flex flex-col text-center justify-center items-center space-y-10 ">
-                {servers.map((server) => (
-                    <li>
-                        <a
-                            className="w-full px-3 py-3 bg-stone-700 text-white"
-                            href={`/servers/${server.id}`}
-                            title={server.description}
+        <div style={{ height: "100vh" }} className="bg-primary">
+            <div className="pt-11">
+                <h1 className="text-center text-white font-extrabold text-5xl font-['Poppins']">
+                    Servers
+                </h1>
+            </div>
+            <div className="min-h-screen flex justify-center items-center">
+                <ul className="bg-white p-8 w-1/2 rounded">
+                    {servers.map((server) => (
+                        <li
                             key={server.id}
+                            className="mb-4 bg-gray-800 hover:bg-gray-700 transition-all p-5 rounded-lg shadow-xl text-white"
                         >
-                            {server.name}
-
-                            {server.status === "online" && (
-                                <span className="text-xs ml-5 uppercase font-bold text-green-500">
-                                    {server.status}
-                                </span>
-                            )}
-                            {server.status === "offline" && (
-                                <span className="text-xs ml-5 uppercase font-bold text-red-500">
-                                    {server.status}
-                                </span>
-                            )}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+                            <a
+                                href={`/servers/${server.id}`}
+                                title={server.description}
+                                className="block"
+                            >
+                                <div className="flex justify-between items-center">
+                                    <h1 className="text-xl font-bold">
+                                        <i className="fas fa-server mr-3"></i>{" "}
+                                        {server.name}
+                                    </h1>
+                                    {server.status === "online" && (
+                                        <h1 className="text-xl uppercase font-extrabold text-green-500">
+                                            {server.status}
+                                        </h1>
+                                    )}
+                                    {server.status === "offline" && (
+                                        <h1 className="text-xl uppercase font-extrabold text-red-500">
+                                            {server.status}
+                                        </h1>
+                                    )}
+                                </div>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }
