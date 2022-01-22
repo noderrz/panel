@@ -20,7 +20,7 @@ function Servers() {
     return (
         <div>
             <h1>Servers</h1>
-            <ul className="flex flex-col text-center justify-center items-center">
+            <ul className="flex flex-col text-center justify-center items-center space-y-10 ">
                 {servers.map((server) => (
                     <li>
                         <a
