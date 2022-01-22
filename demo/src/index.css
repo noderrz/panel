@@ -10,4 +10,18 @@
     .navbar {
         @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
     }
+
+    .das-nav-btn {
+        @apply mr-10 py-6 px-6 hover:bg-gray-600 rounded-lg transition-all;
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            @apply max-w-xs;
+        }
+
+        .das-nav-btn {
+            @apply mr-4 py-3 px-3 rounded-md inline-block;
+        }
+    }
 }
