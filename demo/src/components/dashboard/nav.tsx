@@ -3,7 +3,10 @@ import React from "react";
 function Nav() {
     return (
         <nav className="flex items-center justify-between bg-primaryGray h-20 shadow-xl">
-            <h1 className="ml-4 font-['Poppins'] font-extrabold text-3xl text-white">
+            <h1
+                id="logo"
+                className="ml-4 font-['Poppins'] font-semibold cursor-pointer text-3xl text-white"
+            >
                 Noderrz Demo
             </h1>
             <ul className="flex items-center text-gray-200 ">
@@ -23,7 +26,7 @@ function Nav() {
                     </a>
                 </li>
                 <li className="das-nav-btn">
-                    <a href="/servers">
+                    <a title="Signout..." href="/servers">
                         <i className="fas fa-sign-out-alt fa-xl"></i>
                     </a>
                 </li>

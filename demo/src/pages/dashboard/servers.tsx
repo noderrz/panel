@@ -4,16 +4,31 @@ import Nav from "../../components/dashboard/nav";
 const servers = [
     {
         id: 1,
-        name: "Server 1",
-        description: "This is a server",
+        name: "Discord.js Bot",
+        description: "A Discord.js bot that can be used to manage your server.",
         status: "online",
     },
 
     {
         id: 2,
-        name: "Server 2",
-        description: "This is a server",
+        name: "Pastebin Clone",
+        description: "A clone of the original Pastebin",
         status: "offline",
+    },
+
+    {
+        id: 3,
+        name: "Todo App",
+        description: "A todoapp there you can add tasks",
+        status: "offline",
+    },
+
+    {
+        id: 4,
+        name: "Image Uploader",
+        description:
+            "A image uploader that can be used to upload images to the server.",
+        status: "online",
     },
 ];
 
@@ -23,12 +38,12 @@ function Servers() {
             <Nav />
             <br />
             <div>
-                <div className="min-h-screen flex justify-center items-center">
-                    <ul className="bg-white p-8 w-1/2 rounded">
+                <div className="min-h-screen list flex justify-center items-center">
+                    <ul className="bg-white p-14 w-1/2 rounded">
                         {servers.map((server) => (
                             <li
                                 key={server.id}
-                                className="mb-4 bg-gray-800 hover:bg-gray-700 transition-all p-5 rounded-lg shadow-xl text-white"
+                                className="mb-4 bg-gray-800 hover:bg-gray-700 transition-all p-5 rounded-lg shadow-xl  text-white"
                             >
                                 <a
                                     href={`/servers/${server.id}`}
@@ -48,6 +63,12 @@ function Servers() {
                                         {server.status === "offline" && (
                                             <h1 className="text-xl uppercase font-extrabold text-red-500">
                                                 {server.status}
+                                            </h1>
+                                        )}
+
+                                        {server.status === "" && (
+                                            <h1 className="text-xl uppercase font-extrabold text-gray-300">
+                                                No status
                                             </h1>
                                         )}
                                     </div>

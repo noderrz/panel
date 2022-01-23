@@ -8,8 +8,6 @@ function Login() {
         >
             <form
                 action="/servers"
-                method="POST"
-                encType="multipart/form-data"
                 className="bg-white p-8 rounded shadow-xl w-1/2 "
             >
                 <div className="mb-2">
