@@ -20,10 +20,6 @@
     }
 
     @media (max-width: 768px) {
-        .navbar {
-            @apply max-w-xs;
-        }
-
         .das-nav-btn {
             @apply mr-4 py-3 px-3 rounded-md inline-block;
         }

@@ -30,6 +30,14 @@ const servers = [
             "A image uploader that can be used to upload images to the server.",
         status: "online",
     },
+
+    {
+        id: 5,
+        name: "Node.js api",
+        description:
+            "A Node.js api that can give you information about something.",
+        status: "",
+    },
 ];
 
 function Servers() {

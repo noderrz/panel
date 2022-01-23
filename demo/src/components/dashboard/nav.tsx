@@ -26,7 +26,7 @@ function Nav() {
                     </a>
                 </li>
                 <li className="das-nav-btn">
-                    <a title="Signout..." href="/servers">
+                    <a title="Signout..." href="/auth/logout">
                         <i className="fas fa-sign-out-alt fa-xl"></i>
                     </a>
                 </li>
