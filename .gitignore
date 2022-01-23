@@ -1,2 +1,11 @@
 # Local Netlify folder
 .netlify
+
+node_modules
+.env
+.env.local
+.env.development
+.env.test
+
+.DS_Store
+.git

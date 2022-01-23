@@ -17,11 +17,7 @@ function AboutComponent() {
             <span></span>
             <span></span>
             <br></br>
-            <img
-                src="https://cdn.pterodactyl.io/site-assets/mockup-macbook-grey-1.0.png"
-                alt=""
-                className="max-w-sm"
-            />
+            <img src="/panel-demo.png" alt="" className="max-w-sm" />
         </section>
     );
 }
