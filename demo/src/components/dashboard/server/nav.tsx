@@ -3,7 +3,7 @@ import React from "react";
 function NavControls() {
     return (
         <>
-            <nav className="flex bg-primaryButton text-white h-16 items-center">
+            <nav className="flex bg-primaryButton text-white shadow-2xl h-16 items-center">
                 <ul className="flex ml-4">
                     <li>
                         <a className="nav-control-button" href="#">

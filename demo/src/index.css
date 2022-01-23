@@ -16,7 +16,7 @@
     }
 
     .nav-control-button {
-        @apply mr-10 font-['Poppins'];
+        @apply mr-10 font-['Poppins'] hover:text-gray-800 transition-all;
     }
 
     @media (max-width: 768px) {
