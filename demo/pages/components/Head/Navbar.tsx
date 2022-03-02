@@ -10,6 +10,7 @@ const navigation = [
     { name: "Demo", href: "/demo", current: false },
 ];
 
+// @ts-ignore
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
