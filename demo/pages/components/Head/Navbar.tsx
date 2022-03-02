@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
     { name: "Home", href: "/", current: true },
     { name: "Team", href: "/pages/team", current: false },
     { name: "Projects", href: "/pages/projects", current: false },
-    { name: "Demo", href: "/demo", current: false },
+    { name: "Demo", href: "/auth/login", current: false },
 ];
 
 // @ts-ignore
