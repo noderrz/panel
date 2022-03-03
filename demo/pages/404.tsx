@@ -4,7 +4,7 @@ import Link from "next/link";
 const NotFound: NextPage = () => {
     return (
         <div className="bg-gray-200 text-center justify-center items-center min-h-screen flex flex-col">
-            <h3 className="text-gray-200 mb-2">
+            <h3 className="text-gray-700 font-mono mb-2">
                 Sorry but the page you are looking for does not exist.
             </h3>
             <Link href="/">
