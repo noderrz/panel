@@ -1,17 +1,18 @@
 module.exports = {
-    content: [
-        "./pages/**/*.{js,ts,jsx,tsx}",
-        "./components/**/*.{js,ts,jsx,tsx}",
-    ],
+    content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
             colors: {
-                primary: {
-                    100: "#7ecf3d",
-                    200: "#39a541",
-                    300: "#d1f57a",
-                    400: "#56cc5e",
-                },
+                primary: "#313139",
+                primaryGray: "#7E7E7E",
+                primaryBorder: "#9F9F9F",
+                primaryBorderBg: "#E9E9E9",
+                primaryButton: "#6C6E75",
+                primaryButtonHover: "#5f6169",
+            },
+
+            fontFamily: {
+                body: ["Popins", "sans-serif"],
             },
         },
     },
